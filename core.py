@@ -33,7 +33,7 @@ class PasswordManager:
         if length < 12:
             raise LengthError
 
-        chars = string.ascii_letters + string.digits + "!"#$%&'()*+-./:;<=>?@^_~"
+        chars = string.ascii_letters + string.digits + "!\"#$%&'()*+-./:;<=>?@^_~"
         password = "".join(random.choices(chars, k=length))
         print(f"Password generated: {password}")
         
