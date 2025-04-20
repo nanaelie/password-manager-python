@@ -35,7 +35,7 @@ class PasswordManager:
 
         chars = string.ascii_letters + string.digits + "!\"#$%&'()*+-./:;<=>?@^_~"
         password = "".join(random.choices(chars, k=length))
-        print(f"Password generated: {password}")
+        print("Password generated successfully.")
         
         if input("Do you want to save this password (y/n)? ").strip().lower() in ('y', 'yes'):
             account_name = input("Account name: ").strip()
