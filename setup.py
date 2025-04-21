@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='psmgr',
     version='1.0.0',
-    author='nanaelie-dev',
+    author='nae-dev',
     description='A simple and secure password manager built in Python.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
