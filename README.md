@@ -1,3 +1,22 @@
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/github/license/nanaelie/password-manager-python?color=green)
+![Issues](https://img.shields.io/github/issues/nanaelie/password-manager-python)
+![Last Commit](https://img.shields.io/github/last-commit/nanaelie/password-manager-python)
+![Stars](https://img.shields.io/github/stars/nanaelie/password-manager-python?style=social)
+![Forks](https://img.shields.io/github/forks/nanaelie/password-manager-python?style=social)
+![Code Style](https://img.shields.io/badge/code%20style-pep8-orange)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue)
+![SQLite](https://img.shields.io/badge/database-SQLite-lightgrey?logo=sqlite&logoColor=003B57)
+![DB Secure](https://img.shields.io/badge/database-secured-green)
+![CLI Tool](https://img.shields.io/badge/interface-CLI-orange)
+![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
+![DB Secure](https://img.shields.io/badge/database-secured-green)
+![Security](https://img.shields.io/badge/security-implemented-important)
+![Encryption](https://img.shields.io/badge/encryption-enabled-blue)
+![Data Privacy](https://img.shields.io/badge/data--privacy-GDPR%20friendly-success)
+
 # Password Manager in Python
 
 This is a Python-based **password manager** that helps you securely store and manage your passwords. With features like password generation, account storage, retrieval, updating, and deletion, this tool is perfect for individuals looking to manage their passwords securely and efficiently.
