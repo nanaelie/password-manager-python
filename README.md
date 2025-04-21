@@ -1,5 +1,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/nanaelie/password-manager-python)
+[![PyPI version](https://badge.fury.io/py/pmgr.svg)](https://pypi.org/project/pmgr/)
 ![License](https://img.shields.io/github/license/nanaelie/password-manager-python?color=green)
 ![Issues](https://img.shields.io/github/issues/nanaelie/password-manager-python)
 ![Last Commit](https://img.shields.io/github/last-commit/nanaelie/password-manager-python)
