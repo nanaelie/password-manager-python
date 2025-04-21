@@ -1,11 +1,11 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/nanaelie/password-manager-python)
-[![PyPI version](https://badge.fury.io/py/pmgr.svg)](https://pypi.org/project/pmgr/)
-![License](https://img.shields.io/github/license/nanaelie/password-manager-python?color=green)
-![Issues](https://img.shields.io/github/issues/nanaelie/password-manager-python)
-![Last Commit](https://img.shields.io/github/last-commit/nanaelie/password-manager-python)
-![Stars](https://img.shields.io/github/stars/nanaelie/password-manager-python?style=social)
-![Forks](https://img.shields.io/github/forks/nanaelie/password-manager-python?style=social)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/nanaelie/psmgr)
+[![PyPI version](https://badge.fury.io/py/pmgr.svg)](https://pypi.org/project/psmgr/)
+![License](https://img.shields.io/github/license/nanaelie/psmgr?color=green)
+![Issues](https://img.shields.io/github/issues/nanaelie/psmgr)
+![Last Commit](https://img.shields.io/github/last-commit/nanaelie/psmgr)
+![Stars](https://img.shields.io/github/stars/nanaelie/psmgr?style=social)
+![Forks](https://img.shields.io/github/forks/nanaelie/psmgr?style=social)
 ![Code Style](https://img.shields.io/badge/code%20style-pep8-orange)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
@@ -37,17 +37,18 @@ To install and use the Password Manager, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nanaelie/password-manager-python.git
+   git clone https://github.com/nanaelie/psmgr.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd password-manager-python
+   cd psmgr
+   chmod +x ./psmgr
    ```
 
 3. Run the application:
    ```bash
-   python main.py --help
+   ./psmgr --help
    ```
 
 ## Usage
@@ -55,32 +56,32 @@ To install and use the Password Manager, follow these steps:
 ### Add a new account:
 To add a new account, use the `add-account` command:
 ```bash
-python main.py add-account --name "account_or_website_name" --pswd "your_password_here"
+./psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
 ```
 
 ### Generate a password:
 To generate a new password of a specified length:
 ```bash
-python main.py --generate 16
+./psmgr --generate 16
 ```
 
 ### View all accounts:
 To display all saved accounts:
 ```bash
-python main.py display-accounts
+./psmgr display-accounts
 ```
 
 ### Update an account:
 To update an account's password by ID:
 ```bash
-python main.py --update-account ID
+./psmgr --update-account ID
 ```
 and put the new password
 
 ### Remove an account:
 To remove an account by its ID:
 ```bash
-python main.py --remove-account --id ACCOUNT_ID
+./psmgr --remove-account --id ACCOUNT_ID
 ```
 
 ## Technologies Used
