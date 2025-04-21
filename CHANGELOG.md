@@ -16,3 +16,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - 🧾 Functionality to add, update, retrieve, and delete accounts.
 - 🗄️ Local database integration using SQLite.
 - 💻 Command-line interface (CLI) via `argparse`.
+
+### 📜 **Ajout dans le CHANGELOG.md** (si tu en maintiens un) :
+
+## [v1.0.1] - 2025-04-21
+
+### Added
+- Initial `setup.py` for PyPI packaging.
+- GitHub Actions workflow for automatic PyPI publishing.
+
+### Fixed
+- Workflow now properly triggers on new releases with packaging metadata.
+
+### Note
+This is a technical release focused on packaging; no feature changes were made.
