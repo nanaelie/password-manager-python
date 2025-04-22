@@ -9,22 +9,31 @@ class LengthError(ValueError):
         super().__init__("Password length must be >= 12 for more security")
 
 def create_database():
-    os.makedirs("data", exist_ok=True)
-    conn = sqlite3.connect("data/pass.db")
+    project_dir = os.path.dirname(os.path.abspath(__file__))
+    os.makedirs(os.path.join(project_dir, "data"), exist_ok=True)
+    db_path = os.path.join(project_dir, "data", "database.db")
+    if not os.path.exists(db_path):
+        print("no")
+        open(db_path, "w") 
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
+    
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS password_manager (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        account TEXT NOT NULL UNIQUE,
-        password TEXT NOT NULL
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            account TEXT NOT NULL UNIQUE,
+            password TEXT NOT NULL
         )
     """)
+    
     conn.commit()
     conn.close()
 
 class PasswordManager:
     def __init__(self):
-        self.db_path = "data/pass.db"
+        project_dir = os.path.dirname(os.path.abspath(__file__))
+        os.makedirs(os.path.join(project_dir, "data"), exist_ok=True)
+        self.db_path = os.path.join(project_dir, "data", "database.db")
         self.password_database = sqlite3.connect(self.db_path)
         self.cursor = self.password_database.cursor()
         create_database()

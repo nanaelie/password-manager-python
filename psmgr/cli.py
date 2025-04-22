@@ -2,17 +2,20 @@
 
 import argparse
 import os
+from .__version__ import __version__
 
 try:
-    from core import PasswordManager, create_database
+    from .core import PasswordManager, create_database
 except ModuleNotFoundError:
     raise FileNotFoundError("Can't continue without the core.py file.")
 
-if not os.path.exists("data/pass.db"):
+project_dir = os.path.dirname(os.path.abspath(__file__))
+os.makedirs(os.path.join(project_dir, "data"), exist_ok=True)
+db_path = os.path.join(project_dir, "data", "database.db")
+if not os.path.exists(db_path):
     create_database()
 
 def main():
-    # Description générale du gestionnaire de mots de passe
     parser = argparse.ArgumentParser(
         description="Gestionnaire de compte permettant de :\n"
                     "- Générer un mot de passe robuste (taille >= 12)\n"
@@ -36,6 +39,8 @@ def main():
     parser.add_argument("--get-account", dest="get_account", help="Get information of an account")
     parser.add_argument("--update-account", dest="update_account", help="Update an account's information")
 
+    parser.add_argument("-v", "--version", action="version", version=f"psmgr {__version__}")
+    
     args = parser.parse_args()
 
     password_manager = PasswordManager()

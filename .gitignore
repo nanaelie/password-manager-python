@@ -15,6 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+data/
 lib64/
 parts/
 sdist/
@@ -60,6 +61,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+database.db
 
 # Flask stuff:
 instance/

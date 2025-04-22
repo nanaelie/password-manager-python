@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
+from psmgr.__version__ import __version__
 
 setup(
     name='psmgr',
-    version='1.0.0',
+    version=__version__,
     author='nae-dev',
     description='A simple and secure password manager built in Python.',
     long_description=open('README.md').read(),
@@ -20,7 +21,7 @@ setup(
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
-            'pmgr=main:main',
+            'psmgr=psmgr.cli:main',
         ]
     },
     include_package_data=True,

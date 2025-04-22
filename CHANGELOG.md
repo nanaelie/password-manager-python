@@ -17,8 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - 🗄️ Local database integration using SQLite.
 - 💻 Command-line interface (CLI) via `argparse`.
 
-### 📜 **Ajout dans le CHANGELOG.md** (si tu en maintiens un) :
-
 ## [v1.0.1] - 2025-04-21
 
 ### Added
@@ -30,3 +28,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Note
 This is a technical release focused on packaging; no feature changes were made.
+
+Got it! Here’s your **changelog entry in English** for version `v1.1.0`:
+
+## [v1.1.0] – 2025-04-22
+
+### Major Changes
+- **Repository renamed** from `password-manager-python` → `psmgr`
+- **Main file renamed**: `main.py` → `psmgr.py` → `psmgr/cli.py`
+- **Project structure reorganized** into a Python package layout:
+  - Moved code into a `psmgr/` package directory
+  - Ensured all internal imports use relative or absolute paths properly
+- **Executable module**: Now runs as `python -m psmgr` from any location
+
+### Cleanups & Adjustments
+- All references to the old name (`password-manager-python`) updated across:
+  - Codebase
+  - `README.md`
+  - `setup.py`
+  - GitHub Actions workflows
+- Updated argument parsing logic to support `--version / -v` flag for version display
+
+### Ready for Trusted Publishing
+- Workflow updated for **PyPI Trusted Publishing**
+- New package name reserved: `psmgr`

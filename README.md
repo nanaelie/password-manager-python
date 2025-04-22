@@ -30,58 +30,59 @@ This is a Python-based **password manager** that helps you securely store and ma
 - **Update Account Details**: Update the password for an existing account.
 - **Remove Accounts**: Delete accounts you no longer need from the database.
 - **Display All Accounts**: View all stored accounts and their passwords.
+Here are the instructions you can provide to others for installing and using your `psmgr` project:
 
 ## Installation
 
-To install and use the Password Manager, follow these steps:
+To install **psmgr**, follow these steps:
 
-1. Clone the repository:
+1. **Clone the GitHub repository**:
    ```bash
    git clone https://github.com/nanaelie/psmgr.git
    ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
    ```bash
    cd psmgr
-   chmod +x ./psmgr
    ```
 
-3. Run the application:
+3. **Install the package locally using `pip`**:
    ```bash
-   ./psmgr --help
+   pip install .
    ```
-
+   
 ## Usage
+
+Once installed, you can use **psmgr** directly from the command line.
 
 ### Add a new account:
 To add a new account, use the `add-account` command:
 ```bash
-./psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
+psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
 ```
 
 ### Generate a password:
 To generate a new password of a specified length:
 ```bash
-./psmgr --generate 16
+psmgr --generate 16
 ```
 
-### View all accounts:
+### View all saved accounts:
 To display all saved accounts:
 ```bash
-./psmgr display-accounts
+psmgr display-accounts
 ```
 
 ### Update an account:
-To update an account's password by ID:
+To update the password for an account by its ID:
 ```bash
-./psmgr --update-account ID
+psmgr --update-account ID
 ```
-and put the new password
 
 ### Remove an account:
 To remove an account by its ID:
 ```bash
-./psmgr --remove-account --id ACCOUNT_ID
+psmgr --remove-account --id ACCOUNT_ID
 ```
 
 ## Technologies Used
