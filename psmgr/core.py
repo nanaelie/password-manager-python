@@ -81,7 +81,7 @@ class PasswordManager:
         data = self.cursor.execute("SELECT * FROM password_manager").fetchall()
         if data:
             df = pandas.DataFrame(data, columns=["ID", "ACCOUNT", "PASSWORD"])
-            print(df)
+            print(df.to_string(index=False))
         else:
             print("No accounts found.")
 

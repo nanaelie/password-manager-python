@@ -5,6 +5,8 @@ setup(
     name='psmgr',
     version=__version__,
     author='nae-dev',
+    author_email='elienana92@gmail.com',
+    licence='MIT License',
     description='A simple and secure password manager built in Python.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
