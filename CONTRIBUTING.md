@@ -1,11 +1,11 @@
-# Contribuer à password-manager-python
+# Contribuer à Password Manager
 
 Merci de votre intérêt pour ce projet ! Voici quelques conseils pour contribuer efficacement.
 
 ## Avant de commencer
 
 - Assurez-vous de lire le fichier README.md pour comprendre le fonctionnement du projet.
-- Vérifiez les [issues](https://github.com/nanaelie/password-manager-python/issues) ouvertes pour voir si une suggestion similaire à la vôtre existe déjà.
+- Vérifiez les [issues](https://github.com/nanaelie/psmgr/issues) ouvertes pour voir si une suggestion similaire à la vôtre existe déjà.
 
 ## Comment contribuer
 
