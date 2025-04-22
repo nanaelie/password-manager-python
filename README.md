@@ -89,6 +89,7 @@ psmgr --remove-account ACCOUNT_ID
 - **Python 3.x**: The script is written in Python and leverages standard libraries.
 - **Argparse**: For handling command-line arguments.
 - **SQLite**: For storing account data securely in a local database.
+- **Pandas**: For formatting and displaying account data in a readable tabular format.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
