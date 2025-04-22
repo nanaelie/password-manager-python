@@ -82,7 +82,7 @@ psmgr --update-account ID
 ### Remove an account:
 To remove an account by its ID:
 ```bash
-psmgr --remove-account --id ACCOUNT_ID
+psmgr --remove-account ACCOUNT_ID
 ```
 
 ## Technologies Used
