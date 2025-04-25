@@ -106,3 +106,11 @@ Contributions are welcome! Please fork the repository, make changes, and submit 
 - **Password generator**: Create strong passwords with customizable lengths.
 
 Feel free to create issues or pull requests if you'd like to contribute or have suggestions!
+
+### Support
+
+*If you find this project useful and want to support its development, you can make a donation [here](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU).
+Every contribution helps me dedicate more time to improving this tool. Thank you!*
+
+*Si ce projet vous est utile et que vous souhaitez encourager son développement, vous pouvez faire un don [ici](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU).
+Chaque contribution m'aide à consacrer plus de temps à améliorer cet outil. Merci !*
