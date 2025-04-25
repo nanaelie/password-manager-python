@@ -39,17 +39,17 @@ To install **psmgr**, follow these steps:
 
 1. **Clone the GitHub repository**:
    ```bash
-      git clone https://github.com/nanaelie/psmgr.git
+   git clone https://github.com/nanaelie/psmgr.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-      cd psmgr
+   cd psmgr
    ```
 
 3. **Install the package locally using `pip`**:
    ```bash
-      pip install .
+   pip install .
    ```
    
 ## Usage
@@ -59,31 +59,31 @@ Once installed, you can use **psmgr** directly from the command line.
 ### Add a new account:
 To add a new account, use the `add-account` command:
 ```bash
-   psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
+psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
 ```
 
 ### Generate a password:
 To generate a new password of a specified length:
 ```bash
-   psmgr --generate 16
+psmgr --generate 16
 ```
 
 ### View all saved accounts:
 To display all saved accounts:
 ```bash
-   psmgr display-accounts
+psmgr display-accounts
 ```
 
 ### Update an account:
 To update the password for an account by its ID:
 ```bash
-   psmgr --update-account ID
+psmgr --update-account ID
 ```
 
 ### Remove an account:
 To remove an account by its ID:
 ```bash
-   psmgr --remove-account ACCOUNT_ID
+psmgr --remove-account ACCOUNT_ID
 ```
 
 ## Technologies Used
