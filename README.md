@@ -18,6 +18,7 @@
 ![Security](https://img.shields.io/badge/security-implemented-important)
 ![Encryption](https://img.shields.io/badge/encryption-enabled-blue)
 ![Data Privacy](https://img.shields.io/badge/data--privacy-GDPR%20friendly-success)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU)
 
 # Password Manager in Python
 
@@ -96,6 +97,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contributing
 Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU)
 
 ### Optimized for SEO:
 - **Password Manager Python**: A reliable, open-source password manager built with Python.
