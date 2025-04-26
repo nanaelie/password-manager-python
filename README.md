@@ -56,6 +56,37 @@ To install **psmgr**, follow these steps:
 
 Once installed, you can use **psmgr** directly from the command line.
 
+### Global
+```
+$ psmgr --help   
+usage: psmgr [-h] [--remove-account RM_ACCOUNT] [--generate GENERATE]
+             [--get-account GET_ACCOUNT] [--update-account UPDATE_ACCOUNT] [-v]
+             {add-account,display-accounts} ...
+
+Gestionnaire de compte permettant de :
+- Générer un mot de passe robuste (taille >= 12)
+- Sauvegarder le mot de passe d'un compte
+- Récupérer les informations d'un compte
+- Supprimer un compte
+- Mettre à jour le mot de passe d'un compte
+
+positional arguments:
+  {add-account,display-accounts}
+    add-account         Add a new account
+    display-accounts    Display all accounts information
+
+options:
+  -h, --help            show this help message and exit
+  --remove-account RM_ACCOUNT
+                        Remove account by ID
+  --generate GENERATE   Generate a new password
+  --get-account GET_ACCOUNT
+                        Get information of an account
+  --update-account UPDATE_ACCOUNT
+                        Update an account's information
+  -v, --version         show program's version number and exit
+```
+
 ### Add a new account:
 To add a new account, use the `add-account` command:
 ```bash
