@@ -1,3 +1,4 @@
+[![PyPI Downloads](https://static.pepy.tech/badge/psmgr)](https://pepy.tech/projects/psmgr)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/nanaelie/psmgr)
 [![PyPI version](https://badge.fury.io/py/pmgr.svg)](https://pypi.org/project/psmgr/)
