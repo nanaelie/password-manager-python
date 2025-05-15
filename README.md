@@ -36,22 +36,11 @@ Here are the instructions you can provide to others for installing and using you
 
 ## Installation
 
-To install **psmgr**, follow these steps:
+To install **psmgr**, run this command below:
 
-1. **Clone the GitHub repository**:
-   ```bash
-   git clone https://github.com/nanaelie/psmgr.git
-   ```
-
-2. **Navigate to the project directory**:
-   ```bash
-   cd psmgr
-   ```
-
-3. **Install the package locally using `pip`**:
-   ```bash
-   pip install .
-   ```
+```bash
+   pip install psmgr
+```
    
 ## Usage
 
@@ -59,17 +48,15 @@ Once installed, you can use **psmgr** directly from the command line.
 
 ### Global
 ```
-$ psmgr --help   
-usage: psmgr [-h] [--remove-account RM_ACCOUNT] [--generate GENERATE]
-             [--get-account GET_ACCOUNT] [--update-account UPDATE_ACCOUNT] [-v]
+$ psmgr --help    
+usage: psmgr [-h] [--remove RM_ACCOUNT] [--generate GENERATE] [--get GET_ACCOUNT] [--update UPDATE_ACCOUNT] [-v]
              {add-account,display-accounts} ...
 
-Gestionnaire de compte permettant de :
-- Générer un mot de passe robuste (taille >= 12)
-- Sauvegarder le mot de passe d'un compte
-- Récupérer les informations d'un compte
-- Supprimer un compte
-- Mettre à jour le mot de passe d'un compte
+Password manager allowing to: 
+- Generate a strong password (length ≥ 12) 
+- Save a password for an account 
+- Retrieve account information 
+- Delete an account - Update an account's password
 
 positional arguments:
   {add-account,display-accounts}
@@ -78,26 +65,56 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  --remove-account RM_ACCOUNT
+  --remove RM_ACCOUNT, --rm RM_ACCOUNT
                         Remove account by ID
   --generate GENERATE   Generate a new password
-  --get-account GET_ACCOUNT
-                        Get information of an account
-  --update-account UPDATE_ACCOUNT
+  --get GET_ACCOUNT     Get information of an account
+  --update UPDATE_ACCOUNT
                         Update an account's information
   -v, --version         show program's version number and exit
 ```
 
 ### Add a new account:
-To add a new account, use the `add-account` command:
-```bash
-psmgr add-account --name "account_or_website_name" --pswd "your_password_here"
+#### Global usage
+
+```
+$ psmgr add-account --help
+usage: psmgr add-account [-h] --ptf PLATFORM --uname USERNAME --pswd PASSWORD
+
+options:
+  -h, --help        show this help message and exit
+  --ptf PLATFORM    Platform name for the new account (ex: Facebook, Instagram)
+  --uname USERNAME  Username for the new account
+  --pswd PASSWORD   Password for the new account
 ```
 
+### Params explanations
+
+* `--ptf PLATFORM` → Platform name (e.g., Facebook, Instagram)
+* `--uname USERNAME` → Username used on the platform
+* `--pswd PASSWORD` → Password of the account
+
+#### Example
+
+```bash
+psmgr add-account --ptf Github --uname my_github_username --pswd my_password
+```
+
+To add my `GitHub` account where my username is `my_github_username` and my password is `my_password` to the database.
+
+> ⚠️ Username and password must not be empty and should not contain spaces.
+
 ### Generate a password:
+
 To generate a new password of a specified length:
 ```bash
 psmgr --generate 16
+```
+
+> Passwords must be at least 12 characters long. Shorter lengths will raise:
+
+```
+psmgr.core.LengthError: Password length must be >= 12 for more security
 ```
 
 ### View all saved accounts:
@@ -106,16 +123,37 @@ To display all saved accounts:
 psmgr display-accounts
 ```
 
+#### Example
+```
+$ psmgr display-accounts
+ ID PLATFORM USERNAME     PASSWORD          CREATED_AT          UPDATED_AT
+  3  Threads username E+x'6.w2cV@I 2025-05-15 08:57:16 2025-05-15 10:13:31
+  4    Udemy  johndoe E+x'6.w2cV@I 2025-05-15 08:58:54 2025-05-15 08:58:54
+```
+
 ### Update an account:
 To update the password for an account by its ID:
 ```bash
-psmgr --update-account ID
+psmgr --update ID
+```
+
+#### Example
+```
+$ psmgr --update 3
+New Password: fubgziygih84fr8086
+Password updated successfully.
 ```
 
 ### Remove an account:
 To remove an account by its ID:
 ```bash
 psmgr --remove-account ACCOUNT_ID
+```
+
+#### Example
+```
+$ psmgr --remove 3      
+'Threads' removed successfully.
 ```
 
 ## Technologies Used
@@ -139,10 +177,3 @@ Contributions are welcome! Please fork the repository, make changes, and submit 
 
 Feel free to create issues or pull requests if you'd like to contribute or have suggestions!
 
-### Support
-
-*If you find this project useful and want to support its development, you can make a donation [here](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU).
-Every contribution helps me dedicate more time to improving this tool. Thank you!*
-
-*Si ce projet vous est utile et que vous souhaitez encourager son développement, vous pouvez faire un don [ici](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU).
-Chaque contribution m'aide à consacrer plus de temps à améliorer cet outil. Merci !*
