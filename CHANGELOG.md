@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),  
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [v1.0.0] - 2025-04-21
@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - 🗄️ Local database integration using SQLite.
 - 💻 Command-line interface (CLI) via `argparse`.
 
+
 ## [v1.0.1] - 2025-04-21
 
 ### Added
@@ -30,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 This is a technical release focused on packaging; no feature changes were made.
 
 Got it! Here’s your **changelog entry in English** for version `v1.1.0`:
+
 
 ## [v1.1.0] – 2025-04-22
 
@@ -52,3 +54,34 @@ Got it! Here’s your **changelog entry in English** for version `v1.1.0`:
 ### Ready for Trusted Publishing
 - Workflow updated for **PyPI Trusted Publishing**
 - New package name reserved: `psmgr`
+
+
+## [v1.2.0] – 2025-05-15
+
+This release includes a major refactoring of the database schema, an overhaul of command parameters, and several new features to improve usability and security.
+
+### Changes
+
+#### Database Schema Updates
+
+* Renamed column `account_name` ➜ `platform` for better clarity.
+* Added new columns:
+
+  * `username`
+  * `created_at`
+  * `updated_at`
+* Moved the database file to `~/.psmgr/` for improved user data isolation.
+
+#### Command Refactoring
+
+* Updated command names and parameters for more intuitive and user-friendly CLI interactions.
+
+#### New Features
+
+* Passwords are now **automatically copied to the clipboard** instead of being printed to the terminal — improving both **security** and **usability**.
+
+### Impact
+
+> **Database migration required.**
+> Due to the schema changes, please **back up your existing data** before upgrading to this version.
+
