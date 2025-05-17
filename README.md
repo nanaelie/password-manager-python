@@ -26,7 +26,7 @@ Please, don't forget to **star** ⭐ the repo and share it with others!
 
 This is a Python-based **password manager** that helps you securely store and manage your passwords. With features like password generation, account storage, retrieval, updating, and deletion, this tool is perfect for individuals looking to manage their passwords securely and efficiently.
 
-### Key Features:
+## Key Features:
 
 - **Generate Strong Passwords**: Automatically generate strong, secure passwords of customizable lengths.
 - **Store Accounts**: Add new accounts and their corresponding passwords securely to the database.
@@ -92,13 +92,13 @@ options:
   --pswd PASSWORD   Password for the new account
 ```
 
-### Params explanations
+#### Params explanations
 
 * `--ptf PLATFORM` → Platform name (e.g., Facebook, Instagram)
 * `--uname USERNAME` → Username used on the platform
 * `--pswd PASSWORD` → Password of the account
 
-#### Example
+##### Example
 
 ```bash
 psmgr add-account --ptf Github --uname my_github_username --pswd my_password
@@ -180,7 +180,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
 
-### Optimized for SEO:
+## Optimized for SEO:
 
 - **Password Manager Python**: A reliable, open-source password manager built with Python.
 - **Secure password storage**: Safely store your passwords with this Python tool.
