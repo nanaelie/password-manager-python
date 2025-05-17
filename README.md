@@ -12,7 +12,6 @@
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue)
 ![SQLite](https://img.shields.io/badge/database-SQLite-lightgrey?logo=sqlite&logoColor=003B57)
-![DB Secure](https://img.shields.io/badge/database-secured-green)
 ![CLI Tool](https://img.shields.io/badge/interface-CLI-orange)
 ![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
 ![DB Secure](https://img.shields.io/badge/database-secured-green)
