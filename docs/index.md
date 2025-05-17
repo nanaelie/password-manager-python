@@ -20,7 +20,7 @@ Please, don't forget to **star** ⭐ the repo and share it with others!
   - [Global](#global)
   - [Add a New Account](#add-a-new-account)
     - [Global Usage](#global-usage)
-    - [Params Explanation](#params-explanation)
+    - [Params Explanation](#params-explanations)
       - [Example](#example)
   - [Generate a Password](#generate-a-password)
   - [View All Saved Accounts](#view-all-saved-accounts)
