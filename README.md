@@ -21,11 +21,14 @@
 ![Data Privacy](https://img.shields.io/badge/data--privacy-GDPR%20friendly-success)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU)
 
+Please, don't forget to **star** ⭐ the repo and share it with others!
+
 # Password Manager in Python
 
 This is a Python-based **password manager** that helps you securely store and manage your passwords. With features like password generation, account storage, retrieval, updating, and deletion, this tool is perfect for individuals looking to manage their passwords securely and efficiently.
 
 ### Key Features:
+
 - **Generate Strong Passwords**: Automatically generate strong, secure passwords of customizable lengths.
 - **Store Accounts**: Add new accounts and their corresponding passwords securely to the database.
 - **Retrieve Accounts**: Get the saved information of a specific account when needed.
@@ -39,7 +42,7 @@ Here are the instructions you can provide to others for installing and using you
 To install **psmgr**, run this command below:
 
 ```bash
-   pip install psmgr
+pip install psmgr
 ```
    
 ## Usage
@@ -47,6 +50,7 @@ To install **psmgr**, run this command below:
 Once installed, you can use **psmgr** directly from the command line.
 
 ### Global
+
 ```
 $ psmgr --help    
 usage: psmgr [-h] [--remove RM_ACCOUNT] [--generate GENERATE] [--get GET_ACCOUNT] [--update UPDATE_ACCOUNT] [-v]
@@ -75,6 +79,7 @@ options:
 ```
 
 ### Add a new account:
+
 #### Global usage
 
 ```
@@ -111,19 +116,20 @@ To generate a new password of a specified length:
 psmgr --generate 16
 ```
 
-> Passwords must be at least 12 characters long. Shorter lengths will raise:
+> ⛔ Passwords must be at least 12 characters long. Shorter lengths will raise:
 
-```
-psmgr.core.LengthError: Password length must be >= 12 for more security
-```
+`psmgr.core.LengthError: Password length must be >= 12 for more security`
+
 
 ### View all saved accounts:
+
 To display all saved accounts:
 ```bash
 psmgr display-accounts
 ```
 
 #### Example
+
 ```
 $ psmgr display-accounts
  ID PLATFORM USERNAME     PASSWORD          CREATED_AT          UPDATED_AT
@@ -132,12 +138,14 @@ $ psmgr display-accounts
 ```
 
 ### Update an account:
+
 To update the password for an account by its ID:
 ```bash
 psmgr --update ID
 ```
 
 #### Example
+
 ```
 $ psmgr --update 3
 New Password: fubgziygih84fr8086
@@ -145,32 +153,36 @@ Password updated successfully.
 ```
 
 ### Remove an account:
+
 To remove an account by its ID:
 ```bash
 psmgr --remove-account ACCOUNT_ID
 ```
 
 #### Example
+
 ```
 $ psmgr --remove 3      
 'Threads' removed successfully.
 ```
 
 ## Technologies Used
+
 - **Python 3.x**: The script is written in Python and leverages standard libraries.
 - **Argparse**: For handling command-line arguments.
 - **SQLite**: For storing account data securely in a local database.
 - **Pandas**: For formatting and displaying account data in a readable tabular format.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
+
 Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=A8FW9JNVMMPAU)
-
 ### Optimized for SEO:
+
 - **Password Manager Python**: A reliable, open-source password manager built with Python.
 - **Secure password storage**: Safely store your passwords with this Python tool.
 - **Password generator**: Create strong passwords with customizable lengths.
